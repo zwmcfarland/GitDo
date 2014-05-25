@@ -13,7 +13,7 @@
 <!-- Script --->
 <script>
     $(document).on('click', '#btn_get_repos', function() {
-        window.location = 'https://github.com/login/oauth/authorize?client_id=7e84085f49b17f9068d2&redirect_uri=https://<?php echo $_SERVER['SERVER_NAME']; ?>/access_token.php&scope=repo&state=asdfasdfasdf';
+        window.location = 'https://github.com/login/oauth/authorize?client_id=7e84085f49b17f9068d2&redirect_uri=http://<?php echo $_SERVER['SERVER_NAME']; ?>/access_token.php&scope=repo&state=asdfasdfasdf';
     });
     $(document).on('click', '#btn_no_repos', function() {
         window.location = 'ToDo.php';
